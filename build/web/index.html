@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+HTML login page for the user. Also allows user to create a new member ship
+-->
+<html>
+    <head>
+        <title>Bank Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <div>
+            <div>Welcome to The Bank of BANKS.</div>
+            <br/>
+            <!-- form allows user to login with username and password. Also
+                  the form is link to the controller servlet -->
+            <form action="/finalProjectJAVA3/Controller" method="post">
+                <strong>Enter Your Login Info</strong>
+                <br/><br/>
+                <strong>Username: </strong>
+                <!-- input for username -->
+                <input type="text" name="username" placeholder="enter your username" />
+                <br/><br/>
+                <strong>Password: </strong>
+                <!-- input for password -->
+                <input type="password" name="password" placeholder="enter your password" />
+                <br/><br/>
+                <!-- Login button -->
+                <input name="action" type="submit" value="Login">
+                <input style="margin-top: 10px" type="reset" value="Reset">
+            </form>
+            <br>
+            <!-- form allows users to create a new membership also it links
+                 back to the servlet-->
+            <form action="/finalProjectJAVA3/Controller" method="post">
+                <strong>If you are a new user please create a account first!</strong>
+                <!-- button to create the membership -->
+                <input style="margin-top: 10px" name="action" type="submit" value="New Customer">
+            </form>
+        </div>
+    </center>
+</body>
+</html>
